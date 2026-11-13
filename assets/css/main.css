@@ -120,14 +120,17 @@ ul,ol{margin:0;padding:0}
 .plain li{padding:10px 0;border-top:1px solid var(--line);font-size:16px}
 
 /* About */
-.about-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.9fr);gap:72px;align-items:start}
+.about-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.35fr);gap:72px;align-items:start}
+.about-photo{margin:0;position:relative}
+.about-photo img{display:block;width:100%;height:auto;border-radius:14px}
+.about-photo::after{content:"";position:absolute;left:0;right:0;bottom:0;height:10px;border-radius:0 0 14px 14px;background:linear-gradient(90deg,var(--crimson) 0 20%,var(--orange) 20% 40%,var(--yellow) 40% 60%,var(--green) 60% 80%,var(--blue) 80% 100%)}
 .about-main h2{max-width:16em;margin-bottom:28px}
 .about-main p{max-width:40em}
 .about-main .big{font-family:var(--serif);font-size:24px;line-height:1.4}
 .about-links{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:26px}
-.about-facts{border-top:8px solid var(--navy);padding-top:6px}
-.about-facts dl{margin:0}
-.about-facts div{padding:16px 0;border-bottom:1px solid var(--line)}
+.about-facts{border-top:8px solid var(--navy);margin-top:64px}
+.about-facts dl{margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 48px}
+.about-facts div{padding:18px 0;border-bottom:1px solid var(--line)}
 .about-facts dt{font-size:14px;font-weight:700;color:var(--muted);margin-bottom:3px}
 .about-facts dd{margin:0;font-family:var(--serif);font-size:19px;line-height:1.35}
 
@@ -183,8 +186,25 @@ ul,ol{margin:0;padding:0}
 /* Expertise */
 .xp-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px 48px}
 .xp h3{font-size:22px;padding-top:14px;border-top:3px solid var(--navy);margin-bottom:14px}
+.xp-photo{margin:0;border-radius:14px;overflow:hidden;min-height:260px;position:relative}
+.xp-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 55%}
 .tags{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
 .tags li{font-size:14.5px;padding:6px 12px;background:#fff;border:1px solid var(--line);border-radius:4px}
+
+/* Sectors */
+.sectors{margin-top:72px;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.6fr);gap:64px;align-items:start}
+.sectors-head h3{font-size:34px}
+.sectors-head p{color:var(--muted);font-size:18px}
+.outcomes{list-style:none;margin-top:22px}
+.outcomes li{padding:14px 0 14px 18px;border-left:6px solid var(--c);margin-bottom:10px;background:#fff;border-radius:0 8px 8px 0}
+.outcomes b{display:block;font-size:17px}
+.outcomes span{font-size:15px;color:var(--muted)}
+.o1{--c:var(--green)} .o2{--c:var(--blue)} .o3{--c:var(--orange)}
+.sector-list{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 48px}
+.sector-list li{padding:16px 0;border-top:1px solid var(--line)}
+.sector-list b{display:block;font-family:var(--serif);font-weight:500;font-size:21px;line-height:1.25;margin-bottom:3px}
+.sector-list p{margin:0;font-size:15.5px;color:var(--muted)}
+.sectors-note{grid-column:2;margin:6px 0 0;font-size:15px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
 
 /* Ways to work */
 .ways{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:36px}
@@ -300,7 +320,11 @@ ul,ol{margin:0;padding:0}
   .main-nav .btn{margin-top:16px;justify-content:center}
   .brand-text small{display:block}
   .hero{padding-top:56px}
-  .hero-grid,.about-grid,.services-grid,.cred-grid,.contact-grid,.lead-grid{grid-template-columns:1fr;gap:44px}
+  .hero-grid,.about-grid,.services-grid,.cred-grid,.contact-grid,.lead-grid,.sectors{grid-template-columns:1fr;gap:44px}
+  .sectors-note{grid-column:1}
+  .about-photo{max-width:420px}
+  .about-facts dl{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .xp-photo{min-height:340px}
   .sticky{position:static}
   .section{padding:76px 0}
   .phase-panel{grid-template-columns:1fr;gap:22px;padding:28px 24px}
@@ -321,7 +345,7 @@ ul,ol{margin:0;padding:0}
   .phase-track::before{top:21px}
   .acc-t{font-size:22px}
   .acc-body{grid-template-columns:1fr;gap:18px}
-  .work-list,.xp-grid,.ways,.fgrid{grid-template-columns:1fr}
+  .work-list,.xp-grid,.ways,.fgrid,.sector-list,.about-facts dl{grid-template-columns:1fr}
   .enquiry{padding:22px}
   .quote{padding:48px 0}
   .ach li{grid-template-columns:54px 1fr}
