@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rajan56.github.io/RajaVKConsultant/sitemap.xml

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
+  <rect width="44" height="44" rx="8" fill="#0B2545"/>
+  <text x="22" y="29" text-anchor="middle" font-family="Georgia, serif" font-size="19" font-weight="600" fill="#fff">RK</text>
+  <rect x="6" y="35" width="6.4" height="3" fill="#D0183C"/><rect x="12.4" y="35" width="6.4" height="3" fill="#F28C28"/><rect x="18.8" y="35" width="6.4" height="3" fill="#F6C445"/><rect x="25.2" y="35" width="6.4" height="3" fill="#2FA866"/><rect x="31.6" y="35" width="6.4" height="3" fill="#2F6FDE"/>
+</svg>
