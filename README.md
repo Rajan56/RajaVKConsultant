@@ -12,7 +12,7 @@ Live site: https://rajan56.github.io/RajaVKConsultant/
 | `privacy.html` | Privacy note for the enquiry form |
 | `assets/css/main.css` | Styles and colour tokens |
 | `assets/js/main.js` | Hero picker, approach phases, services accordion, enquiry form |
-| `assets/fonts/` | Self-hosted typefaces (Newsreader, Hanken Grotesk; SIL Open Font License) |
+| `assets/fonts/` | Self-hosted Newsreader typeface for headings (SIL Open Font License); body text uses Arial |
 | `assets/img/` | Favicon and the preview image used when the link is shared |
 | `tools/check_site.py` | Python quality check for links, files and headings |
 
